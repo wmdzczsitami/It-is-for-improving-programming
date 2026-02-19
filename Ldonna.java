@@ -6,7 +6,9 @@ fn=card():list<:float>{
   of prob:list = which:float(it_amount(5))
   /**of = 변수 선언,
   which = null과 비슷, 타입 지정 가능, 위 코드를
-  of prob:list<:float> = which() 로도 가능
+  of prob:list<:float> = which()
+  로도 가능
+  */
   return prob.foreach { i
     prob[i] = random_float(10.0, 50.0)
   }
